@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1A2126;
+  color: #F5F2EB;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.caja {
+  background-color: #3A4750;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+
+h1, h2, .logo, .btn-crema, .footer-titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.texto-suave {
+  color: #D5DCE0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.btn-crema {
+  display: inline-block;
+  background-color: #F5F2EB;
+  color: #1A2126;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 7px 22px;
+  font-size: 0.75rem;
+}
+
+.btn-crema:hover {
+  background-color: #e6e1d5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+}
+
+.logo {
+  color: #F5F2EB;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.icono-buscar {
+  font-size: 1rem;
+  color: #F5F2EB;
+}
+
+.btn-contacto {
+  display: none;
+}
+.hero {
+  text-align: center;
+  padding: 36px 24px;
+}
+
+.hero h1 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  max-width: 520px;
+  margin: 0 auto 18px;
+}
+
+/*seccion oara tarjetas*/
+.hero {
+  text-align: center;
+  padding: 36px 24px;
+}
+
+.hero h1 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  max-width: 520px;
+  margin: 0 auto 18px;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.tarjetas .caja {
+  margin-bottom: 0;
+}
+
+.tarjeta {
+  padding: 18px 16px;
+}
+
+.tarjeta h2 {
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.tarjeta p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.lista-tarjeta {
+  margin-top: 10px;
+  padding-left: 18px;
+  font-size: 0.78rem;
+  color: #E6E9EC;
+}
+
+.lista-tarjeta li {
+  margin-bottom: 3px;
+}
+ /* Impacto Global */
+.impacto {
+  padding: 20px;
+  text-align: center;
+}
+
+.impacto h2 {
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+}
+
+/*graficos*/
+.impacto-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.mapa {
+  max-width: 60%;
+  max-height: 220px;
+  height: auto;
+}
+
+.grafico {
+  max-width: 30%;
+  max-height: 170px;
+  height: auto;
+}
+.footer {
+  padding: 12px 18px;
+  margin-bottom: 0;
+}
+
+.footer-titulo {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.footer-inferior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.footer-enlaces {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-enlaces a {
+  color: #F5F2EB;
+  text-decoration: none;
+}
+
+.footer-enlaces a:hover {
+  text-decoration: underline;
+}
+/*tablet*/
+@media (max-width: 991px) {
+  .icono-buscar {
+    display: none;
+  }
+
+  .btn-contacto {
+    display: inline-block;
+  }
+
+  .grafico {
+    display: none;
+  }
+
+  .mapa {
+    max-width: 85%;
+  }
+
+  .footer-inferior {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 820px) {
+  .tarjeta {
+    padding: 12px 8px;
+  }
+
+  .tarjeta h2 {
+    font-size: 0.85rem;
+  }
+
+  .tarjeta p,
+  .lista-tarjeta {
+    font-size: 0.72rem;
+  }
+}
+/*celures*/
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .btn-contacto {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 24px 16px;
+  }
+
+  .hero h1 {
+    font-size: 1.35rem;
+  }
+
+  .tarjetas {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .tarjeta {
+    padding: 16px;
+  }
+
+  .lista-tarjeta {
+    display: none;
+  }
+
+  .mapa {
+    max-width: 100%;
+    max-height: 150px;
+  }
+
+  .footer-enlaces {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+}
